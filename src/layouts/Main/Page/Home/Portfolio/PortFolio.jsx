@@ -10,7 +10,7 @@ const PortFolio = () => {
 
                 <div className='mt-20 space-y-5' >
                     <h1 className='text-4xl text-center underline font-semibold'>PortFolio</h1>
-                    <p className='text-center text-2xl'>Check out some of my latest design 
+                    <p className='text-center text-2xl'>Check out some of my latest Work 
                         
                        </p>
 

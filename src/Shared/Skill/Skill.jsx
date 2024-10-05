@@ -26,7 +26,7 @@ const skills = {
 const SkillsSection = () => {
   return (
     <div className="my-skills-section bg-white text-black p-6 md:p-8 lg:p-10">
-     <SectionTitle title={'my skill'}></SectionTitle>
+      <SectionTitle title={'My Skills'} />
 
       {Object.entries(skills).map(([category, items]) => (
         <div key={category} className="mb-8">
@@ -35,12 +35,12 @@ const SkillsSection = () => {
             {items.map((skill) => (
               <motion.div
                 key={skill.name}
-                className="flex items-center justify-center p-4 border border-gray-700 rounded-md min-w-[150px] md:min-w-[200px] transition-transform duration-200"
-                initial={{ opacity: 0, scale: 0.8 }}  // অ্যানিমেশনের জন্য প্রাথমিক অবস্থান
-                animate={{ opacity: 1, scale: 1 }}    // অ্যানিমেশনের পরের অবস্থান
-                transition={{ duration: 0.3 }}          // অ্যানিমেশনের সময়কাল
-                whileHover={{ scale: 1.1 }}            // হোভার করলে স্কেল বাড়ানো
-                whileTap={{ scale: 0.95 }}             // ট্যাপ করলে স্কেল কমানো
+                className="flex items-center justify-center p-4 border border-gray-700 rounded-md min-w-[150px] md:min-w-[200px] transition-transform duration-200 perspective"
+                initial={{ opacity: 0, scale: 0.8, rotateY: 20 }} // Initial position with rotation for 3D effect
+                animate={{ opacity: 1, scale: 1, rotateY: 0 }}   // Final position without rotation
+                transition={{ duration: 0.3 }}                     // Animation duration
+                whileHover={{ scale: 1.1, rotateY: -5 }}          // Scale and rotate slightly on hover
+                whileTap={{ scale: 0.95, rotateY: 5 }}            // Scale and rotate slightly on tap
               >
                 <img
                   src={skill.logo}

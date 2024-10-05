@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import img from '../../../../../assets/kuyf.jpg';
 import { CiSaveDown2 } from 'react-icons/ci';
+import AnimationForHero from '../../../../../BackGroundAnimation/animationforhero';
+
 
 const Hero = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -21,8 +23,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='hero h-[550px] bg-zinc-100 text-black p-5'>
-      <div className='grid md:grid-cols-2 gap-5 items-center'>
+    <div className='relative hero h-[550px] bg-zinc-100 text-black p-5 overflow-hidden'>
+      <AnimationForHero /> {/* Add the background animation here */}
+
+      <div className='grid md:grid-cols-2 gap-5 items-center relative z-10'> {/* Set z-10 to bring content in front */}
         
         <motion.div
           className='flex justify-center'
@@ -55,12 +59,12 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.h1 
-            className='text-4xl font-bold mb-4'
+            className='text-5xl font-bold mb-4'
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            {["Hi,", "I'm", "Your", "Moazzem", "Bhuiyan"].map((word, index) => (
+            {["Hi,", "I'm",  "Moazzem", "Bhuiyan"].map((word, index) => (
               <span
                 key={index}
                 className='hover:text-blue-500 transition-colors duration-300'

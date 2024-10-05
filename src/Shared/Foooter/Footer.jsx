@@ -25,11 +25,11 @@ const Footer = () => {
         <h3 className="text-lg font-bold mb-2">Stay Connected With Us</h3>
         <p className="mb-4">Follow us on social media:</p>
         <div className="flex justify-center space-x-4 mb-4">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/moazzem.bhuiyan.37" target="_blank" rel="noopener noreferrer">
 
             <i className="h-8 text-3xl w-8 transition-transform duration-300 hover:scale-110"> <FaFacebook></FaFacebook> </i>
           </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/tiyon_bhuiyan?igsh=YzljYTk1ODg3Zg== " target="_blank" rel="noopener noreferrer">
           <i className="h-8 text-3xl w-8 transition-transform duration-300 hover:scale-110"> <FaInstagram></FaInstagram> </i>
           </a>
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
