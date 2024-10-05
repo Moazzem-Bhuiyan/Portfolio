@@ -4,20 +4,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from "../../../../assets/img1.png"; // Add your project images
 import img2 from "../../../../assets/im2.png";
-import p1 from "../../../../assets/kuyf.jpg";
 import img4 from "../../../../assets/p1.png";
 import img5 from "../../../../assets/p3.png";
+import img6 from "../../../../assets/im6.png";
+
 import SectionTitle from "../../../SectionTitle/SectionTitle";
 
-
 const projects = [
-  { id: 1, imgSrc: img4, title: "Ecommerce Gadgetwebsite using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. Implemented payment handling using Stripe API.  ", link: "https://form-validation-usecntx.web.app" },
-  { id: 2, imgSrc: img2, title: "Hugnry Horse Full a complete e-commerce website using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. Implemented payment handling using Stripe API. ", link: "https://simple-firebase-fa54a.web.app/" },
-  { id: 3, imgSrc: img5, title: "Resturent Booking Fontend using react js", link: "https://resturent-booking-c5002.web.app" },
-  { id: 4, imgSrc: img1, title: "Simple Food Project Fontend using reaat js", link: "https://simply-goo-food.web.app/" },
+  { id: 1, imgSrc: img4, title: "Ecommerce Gadget website using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. Implemented payment handling using Stripe API.", link: "https://form-validation-usecntx.web.app" },
+  { id: 2, imgSrc: img2, title: "Hungry Horse Full, a complete e-commerce website using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. Implemented payment handling using Stripe API.", link: "https://simple-firebase-fa54a.web.app/" },
+  { id: 3, imgSrc: img5, title: "Restaurant Booking Frontend using React.js", link: "https://resturent-booking-c5002.web.app" },
+  { id: 4, imgSrc: img1, title: "Simple Food Project Frontend using React.js", link: "https://simply-goo-food.web.app/" },
+  // New project added here
+  { id: 5, imgSrc: img6, title: "New Project - Blog Application using React.js and Tailwind CSS", link: "https://darkmood-and-ligthmodd-toggole-practice.vercel.app/" },
 ];
-
-
 
 const Project = () => {
   useEffect(() => {
@@ -25,8 +25,8 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="project-section ">
-     <SectionTitle title={'Some Of My leatest Work'}></SectionTitle>
+    <div className="project-section">
+      <SectionTitle title={'Some Of My Latest Work'} />
       <div className="grid md:grid-cols-2 bg-gray-100 lg:py-10 gap-10 lg:px-32">
         {projects.map((project, index) => (
           <motion.div
