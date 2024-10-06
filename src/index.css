@@ -37,3 +37,12 @@ li{
 }
 
 
+@media (max-width: 768px) {
+  .group-hover\:opacity-100 {
+    opacity: 1 !important; /* Ensure hover effect is always visible */
+  }
+
+  .group-hover\:scale-105 {
+    transform: scale(1.05) !important; /* Apply scaling effect always on mobile */
+  }
+}
