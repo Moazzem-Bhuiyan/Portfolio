@@ -7,6 +7,7 @@ import img2 from "../../../../assets/im2.png";
 import img4 from "../../../../assets/p1.png";
 import img5 from "../../../../assets/p3.png";
 import img6 from "../../../../assets/im6.png";
+import movie from '../../../../assets/movie.png'
 
 import SectionTitle from "../../../SectionTitle/SectionTitle";
 
@@ -17,6 +18,7 @@ const projects = [
   { id: 3, imgSrc: img5, title: "Restaurant Booking Frontend using React.js", link: "https://resturent-booking-c5002.web.app" },
   { id: 4, imgSrc: img1, title: "Simple Food Project Frontend using React.js", link: "https://simply-goo-food.web.app/" },
   { id: 5, imgSrc: img6, title: "New Project - Blog Application using React.js and Tailwind CSS", link: "https://darkmood-and-ligthmodd-toggole-practice.vercel.app/" },
+  { id: 6, imgSrc: movie, title: "Simple Movies-website using react.js and Tailwind CSS", link: "https://search-movies-self.vercel.app/" },
 ];
 
 const Project = () => {
