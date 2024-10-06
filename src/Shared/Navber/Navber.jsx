@@ -1,15 +1,20 @@
-// src/components/Navber.jsx
-
 import React from 'react';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Navber = () => {
+  const handleMenuClick = () => {
+    // Close the dropdown menu after selecting a link
+    const checkbox = document.getElementById('navbar-toggle');
+    if (checkbox) checkbox.checked = false;
+  };
+
   return (
-    <div className="navbar  bg-black bg-opacity-80 text-white">
+    <div className="navbar bg-black bg-opacity-80 text-white">
       <div className="navbar-start">
         <div className="dropdown">
+          <input id="navbar-toggle" type="checkbox" className="hidden" />
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -28,75 +33,83 @@ const Navber = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-white text-black text-2xl rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-white text-black text-2xl rounded-box z-[100] mt-3 w-52 p-2 shadow"
+            role="menu"
           >
-              <li> <NavLink to ='/'>Home </NavLink> </li>
-          
-            <li> <NavLink to ='/portfolio'>Portfolio </NavLink> </li>
-            <li> <NavLink to ='/about'>About </NavLink> </li>
-            <li> <NavLink to ='/contact'>Contact </NavLink> </li>
-        
+            <li role="menuitem">
+              <NavLink to="/" onClick={handleMenuClick}>Home</NavLink>
+            </li>
+            <li role="menuitem">
+              <NavLink to="/portfolio" onClick={handleMenuClick}>Portfolio</NavLink>
+            </li>
+            <li role="menuitem">
+              <NavLink to="/about" onClick={handleMenuClick}>About</NavLink>
+            </li>
+            <li role="menuitem">
+              <NavLink to="/contact" onClick={handleMenuClick}>Contact</NavLink>
+            </li>
           </ul>
         </div>
       </div>
       <div className="navbar-center">
         <motion.a
           className="btn btn-ghost text-3xl"
-          whileHover={{ rotate: 360 }} // Hovering will rotate the icon
-          whileTap={{ rotate: 0 }} // When tapped, it will return to the original position
+          whileHover={{ rotate: 360 }} 
+          whileTap={{ rotate: 0 }}
+          href="https://www.facebook.com/moazzem.bhuiyan.37"
         >
-          <a href="https://www.facebook.com/moazzem.bhuiyan.37"><FaFacebook /></a>
+          <FaFacebook />
         </motion.a>
         <motion.a
           className="btn btn-ghost text-3xl"
           whileHover={{ rotate: 360 }}
           whileTap={{ rotate: 0 }}
+          href="https://www.instagram.com/tiyon_bhuiyan?igsh=YzljYTk1ODg3Zg=="
         >
-          <a href="https://www.instagram.com/tiyon_bhuiyan?igsh=YzljYTk1ODg3Zg== "><FaInstagram /></a>
+          <FaInstagram />
         </motion.a>
         <motion.a
           className="btn btn-ghost text-3xl"
           whileHover={{ rotate: 360 }}
           whileTap={{ rotate: 0 }}
+          href="https://github.com/Moazzem-Bhuiyan"
         >
-            <a href="https://github.com/Moazzem-Bhuiyan">   <FaGithub /></a>
-       
+          <FaGithub />
         </motion.a>
         <motion.a
           className="btn btn-ghost text-3xl"
           whileHover={{ rotate: 360 }}
           whileTap={{ rotate: 0 }}
+          href="https://www.linkedin.com"
         >
           <FaLinkedin />
         </motion.a>
       </div>
-      <div className="navbar-end  ">
-       <div className=' hidden md:block'>
-       <button className="btn btn-ghost mr-8 btn-circle">
-          <li className='text-xl'>
-            <NavLink to ='/'>Home</NavLink>
+      <div className="navbar-end hidden md:block">
+        <button className="btn btn-ghost mr-8 btn-circle">
+          <li className="text-xl">
+            <NavLink to="/">Home</NavLink>
           </li>
         </button>
-       <button className="btn btn-ghost mr-12 btn-circle">
-          <li className='text-xl'>
-            <NavLink to ='/about'>About</NavLink>
+        <button className="btn btn-ghost mr-12 btn-circle">
+          <li className="text-xl">
+            <NavLink to="/about">About</NavLink>
           </li>
         </button>
         <button className="btn btn-ghost mr-14 btn-circle">
           <div className="indicator">
-            <li className='text-xl'>
-              <NavLink to='/portfolio'>Portfolio</NavLink>
+            <li className="text-xl">
+              <NavLink to="/portfolio">Portfolio</NavLink>
             </li>
           </div>
         </button>
         <button className="btn btn-ghost mr-5 btn-circle">
           <div className="indicator">
-            <li className='text-xl'>
-              <NavLink to ='/contact'>Contact</NavLink>
+            <li className="text-xl">
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </div>
         </button>
-       </div>
       </div>
     </div>
   );
