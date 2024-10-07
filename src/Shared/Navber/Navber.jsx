@@ -11,7 +11,7 @@ const Navber = () => {
   };
 
   return (
-    <div className="navbar bg-black bg-opacity-80 text-white">
+    <div className="navbar bg-black bg-opacity-80 text-white flex justify-between items-center">
       <div className="navbar-start">
         <div className="dropdown">
           <input id="navbar-toggle" type="checkbox" className="hidden" />
@@ -85,27 +85,27 @@ const Navber = () => {
           <FaLinkedin />
         </motion.a>
       </div>
-      <div className="navbar-end hidden md:block">
-        <button className="btn btn-ghost mr-8 btn-circle">
+      <div className="navbar-end hidden md:block ">
+        <button className="btn btn-ghost mr-8 ml-60 btn-circle">
           <li className="text-xl">
             <NavLink to="/">Home</NavLink>
           </li>
         </button>
-        <button className="btn btn-ghost mr-12 btn-circle">
+        <button className="btn btn-ghost btn-circle">
           <li className="text-xl">
             <NavLink to="/about">About</NavLink>
           </li>
         </button>
-        <button className="btn btn-ghost mr-14 btn-circle">
+        <button className="btn btn-ghost ml-12 btn-circle">
           <div className="indicator">
             <li className="text-xl">
               <NavLink to="/portfolio">Portfolio</NavLink>
             </li>
           </div>
         </button>
-        <button className="btn btn-ghost mr-5 btn-circle">
+        <button className="btn btn-ghost ml-20 btn-circle">
           <div className="indicator">
-            <li className="text-xl">
+            <li className="text-xl mr-10">
               <NavLink to="/contact">Contact</NavLink>
             </li>
           </div>
