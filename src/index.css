@@ -46,3 +46,7 @@ li{
     transform: scale(1.05) !important; /* Apply scaling effect always on mobile */
   }
 }
+
+.hero {
+  perspective: 1000px; 
+}

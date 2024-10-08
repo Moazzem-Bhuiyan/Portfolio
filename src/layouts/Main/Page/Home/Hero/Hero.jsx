@@ -1,47 +1,30 @@
 // src/components/Hero.jsx
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import img from '../../../../../assets/kuyf.jpg';
 import { CiSaveDown2 } from 'react-icons/ci';
 import AnimationForHero from '../../../../../BackGroundAnimation/animationforhero';
 
-
 const Hero = () => {
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    setCursorPosition({ x: clientX, y: clientY });
-  };
-
-  useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
   return (
     <div className='relative hero h-[550px] bg-zinc-100 text-black p-5 overflow-hidden'>
       <AnimationForHero /> {/* Add the background animation here */}
 
       <div className='grid md:grid-cols-2 gap-5 items-center relative z-10'> {/* Set z-10 to bring content in front */}
-        
-        <motion.div
-          className='flex justify-center'
-          initial={{ scale: 0.8 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-        >
+
+        <motion.div className='flex justify-center'>
           <motion.img
             className='w-full h-auto max-w-[250px] lg:max-w-[300px] max-h-[300px] object-cover rounded-full border-4 border-transparent transition-all duration-300 hover:shadow-xl'
             src={img}
             alt="Your Name"
-            style={{
-              translate: `${cursorPosition.x * 0.02}px ${cursorPosition.y * 0.02}px`,
+            whileHover={{
+              scale: 1.1,
+              rotateY: 15, // Y-অক্ষের চারপাশে ঘোরানো
+              rotateX: 5,  // X-অক্ষের চারপাশে ঘোরানো
+              boxShadow: "0 20px 40px rgba(0,0,0,0.3)" // শ্যাডো বাড়ানো
             }}
-            whileHover={{ scale: 1.1, rotate: 3 }}
+            whileTap={{ scale: 0.9 }} // ক্লিক করার সময় স্কেল কমবে
             transition={{ duration: 0.3 }}
             initial={{ borderColor: '#4A90E2' }}
             whileHover={{
