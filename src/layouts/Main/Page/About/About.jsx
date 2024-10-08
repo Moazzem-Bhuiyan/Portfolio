@@ -4,6 +4,7 @@ import me from "../../../../assets/me1.jpg";
 import SkillsSection from '../../../../Shared/Skill/Skill';
 import './About.css'; // Import the CSS file for background animation
 import { FaUserGraduate } from 'react-icons/fa';
+import SectionTitle from '../../../../Shared/SectionTitle/SectionTitle';
 
 const About = () => {
   // Animation variants for the text and image
@@ -63,9 +64,14 @@ const About = () => {
         </div>
       </div>
 
-      {/* Education Section  */}
 
       <SkillsSection />
+
+      {/* Education Section  */}
+
+   <SectionTitle title={'Education'}></SectionTitle>
+
+
 
       <div className='my-20'>
 
