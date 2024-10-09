@@ -14,9 +14,9 @@ import SectionTitle from "../../../SectionTitle/SectionTitle";
 
 // Project data
 const projects = [
-  { id: 1, imgSrc: img4, title: "Ecommerce Gadget website using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. Implemented payment handling using Stripe API.", link: "https://form-validation-usecntx.web.app" },
+  { id: 1, imgSrc: img4, title: "Ecommerce Gadget website using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. Implemented payment handling using Stripe API.", link: "https://form-auth-with-email--pass.web.app/" },
   { id: 2, imgSrc: img2, title: "Hungry Horse Full, a complete e-commerce website using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. Implemented payment handling using Stripe API.", link: "https://simple-firebase-fa54a.web.app/" },
-  { id: 3, imgSrc: travel, title: "Travel Booking Website using React js Node js Express js.", link: "https://form-validation-usecntx.web.app" },
+  { id: 3, imgSrc: travel, title: "Travel Booking Website using React js Node js Express js.", link: "https://form-validation-usecntx.web.app/" },
   { id: 4, imgSrc: img1, title: "Simple Food Project Frontend using React.js", link: "https://simply-goo-food.web.app/" },
   { id: 5, imgSrc: img6, title: "New Project - Blog Application using React.js and Tailwind CSS", link: "https://darkmood-and-ligthmodd-toggole-practice.vercel.app/" },
   { id: 6, imgSrc: movie, title: "Simple Movies-website using react.js and Tailwind CSS", link: "https://search-movies-self.vercel.app/" },
