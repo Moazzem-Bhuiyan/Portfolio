@@ -85,7 +85,7 @@ const About = () => {
       <div className="text-lg font-black">Passed SSC(Secondary School Certificate)</div>
       I have successfully passed the Secondary School Certificate (SSC) examination,
        achieving a GPA of 4.76.
-       This milestone reflects my dedication and hard work throughout my academi journey.
+       This milestone reflects my dedication and hard work throughout my academic journey.
     </div>
     <hr />
   </li>
