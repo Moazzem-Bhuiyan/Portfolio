@@ -16,7 +16,7 @@ import SectionTitle from "../../../SectionTitle/SectionTitle";
 // Project data
 const projects = [
 
-  { id: 1, imgSrc: img2, title: "Hungry Horse Full, a complete e-commerce- website using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. Implemented payment handling using Stripe API.", link: "https://simple-firebase-fa54a.web.app/" },
+  { id: 1, imgSrc: img2, title: "Hungry Horse Full, a complete e-commerce website using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. Implemented payment handling using Stripe API.", link: "https://simple-firebase-fa54a.web.app/" },
   { id: 2, imgSrc: travel, title: "Travel Booking Website using React js Node js Express js.  Implemented payment handling using Stripe API.", link: "https://form-validation-usecntx.web.app/" },
 
   { id: 3, imgSrc: img4, title: "Ecommerce Gadget website using React for the frontend and Node.js for the backend integrated with MongoDB for data storage. ", link: "https://form-auth-with-email--pass.web.app/" },
