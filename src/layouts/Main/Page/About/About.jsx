@@ -98,7 +98,7 @@ const About = () => {
       <time className="font-mono italic">2024</time>
       <div className="text-lg font-black">Studying at "Diploma in Engineering"</div>
       I am currently pursuing a diploma in Computer Science and Engineering (CSE) and am in my 8th semester.
-       This course is helping me strengthen my skills and knowledge in the field of 
+       This course is helping me strengthen my skills and knowledge in the field of technology.
     </div>
     <hr />
   </li>
