@@ -26,7 +26,7 @@ const projects = [
   { id: 4, imgSrc: img1, title: "Simple Food Project Frontend using React.js", link: "https://simply-goo-food.web.app/" },
   // { id: 5, imgSrc: img6, title: "New Project - Blog Application using React.js and Tailwind CSS", link: "https://darkmood-and-ligthmodd-toggole-practice.vercel.app/" },
   { id: 6, imgSrc: movie, title: "Simple Movies-website using react.js and Tailwind CSS", link: "https://search-movies-self.vercel.app/" },
-  { id: 7, imgSrc: img5, title: "Restaurant Booking Frontend using React.js", link: "https://resturent-booking-c5002.web.app" },
+  { id: 7, imgSrc: img5, title: "Restaurant Booking Frontend using React.js", link: "https://resturent-booking-c5002.web.app/" },
 ];
 
 // 
