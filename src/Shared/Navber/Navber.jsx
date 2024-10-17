@@ -80,7 +80,7 @@ const Navber = () => {
           className="btn btn-ghost text-3xl"
           whileHover={{ rotate: 360 }}
           whileTap={{ rotate: 0 }}
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/moazzem-hossen-bhuiyan-325432331/"
         >
           <FaLinkedin />
         </motion.a>

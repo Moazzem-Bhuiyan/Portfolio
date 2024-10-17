@@ -1,18 +1,16 @@
-// src/components/Hero.jsx
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import img from '../../../../../assets/kuyf.jpg';
 import { CiSaveDown2 } from 'react-icons/ci';
 import AnimationForHero from '../../../../../BackGroundAnimation/animationforhero';
+import resume from '../../../../../assets/resume.pdf' // import resume file
 
 const Hero = () => {
   return (
     <div className='relative hero h-[550px] bg-zinc-100 text-black p-5 overflow-hidden'>
       <AnimationForHero /> {/* Add the background animation here */}
 
-      <div className='grid md:grid-cols-2 gap-5 items-center relative z-10'> {/* Set z-10 to bring content in front */}
-
+      <div className='grid md:grid-cols-2 gap-5 items-center relative z-10'>
         <motion.div className='flex justify-center'>
           <motion.img
             className='w-full h-auto max-w-[250px] lg:max-w-[300px] max-h-[300px] object-cover rounded-full border-4 border-transparent transition-all duration-300 hover:shadow-xl'
@@ -20,11 +18,11 @@ const Hero = () => {
             alt="Your Name"
             whileHover={{
               scale: 1.1,
-              rotateY: 15, // Y-অক্ষের চারপাশে ঘোরানো
-              rotateX: 5,  // X-অক্ষের চারপাশে ঘোরানো
-              boxShadow: "0 20px 40px rgba(0,0,0,0.3)" // শ্যাডো বাড়ানো
+              rotateY: 15, 
+              rotateX: 5,  
+              boxShadow: "0 20px 40px rgba(0,0,0,0.3)" 
             }}
-            whileTap={{ scale: 0.9 }} // ক্লিক করার সময় স্কেল কমবে
+            whileTap={{ scale: 0.9 }} 
             transition={{ duration: 0.3 }}
             initial={{ borderColor: '#4A90E2' }}
             whileHover={{
@@ -51,8 +49,8 @@ const Hero = () => {
               <span
                 key={index}
                 className='hover:text-blue-500 transition-colors duration-300'
-                onMouseEnter={(e) => e.target.style.color = 'red'} // Change color on hover
-                onMouseLeave={(e) => e.target.style.color = ''} // Reset color on leave
+                onMouseEnter={(e) => e.target.style.color = 'red'}
+                onMouseLeave={(e) => e.target.style.color = ''}
               >
                 {word}{" "}
               </span>
@@ -69,23 +67,26 @@ const Hero = () => {
               <span
                 key={index}
                 className='hover:text-blue-500 transition-colors duration-300'
-                onMouseEnter={(e) => e.target.style.color = 'red'} // Change color on hover
-                onMouseLeave={(e) => e.target.style.color = ''} // Reset color on leave
+                onMouseEnter={(e) => e.target.style.color = 'red'}
+                onMouseLeave={(e) => e.target.style.color = ''}
               >
                 {word}{" "}
               </span>
             ))}
           </motion.p>
-          
-          <motion.button
-            className='btn bg-black rounded-full px-6 py-3 text-lg text-white'
-            whileHover={{ scale: 1.05, rotate: 3 }}
-            transition={{ duration: 0.3 }}
-          >
-            <CiSaveDown2 className='text-2xl font-bold' />Resume
-          </motion.button>
-        </motion.div>
 
+          {/* Add the resume download button */}
+          <a href={resume} download="Moazzem_Bhuiyan_Resume.pdf">
+            <motion.button
+              className='btn bg-black rounded-full px-6 py-3 text-lg text-white'
+              whileHover={{ scale: 1.05, rotate: 3 }}
+              transition={{ duration: 0.3 }}
+            >
+              <CiSaveDown2 className='text-2xl font-bold' />Resume
+            </motion.button>
+          </a>
+
+        </motion.div>
       </div>
     </div>
   );
