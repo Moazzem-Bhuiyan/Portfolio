@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import img from '../../../../../assets/kuyf.jpg';
 import { CiSaveDown2 } from 'react-icons/ci';
 import AnimationForHero from '../../../../../BackGroundAnimation/animationforhero';
-import resume from '../../../../../assets/finalresume.pdf'
+import resume from '../../../../../assets/resume.pdf'
 
 const Hero = () => {
   return (
