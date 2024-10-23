@@ -34,7 +34,7 @@ const projects = [
     id: 2,
     imgSrc: travel,
     title:
-      "Travel Booking Website using React js Node js Express js.  Implemented payment handling using Stripe API.",
+      "Travel Booking Website using React js Node j Express js.  Implemented payment handling using Stripe API.",
     link: "https://form-validation-usecntx.web.app/",
   },
 
