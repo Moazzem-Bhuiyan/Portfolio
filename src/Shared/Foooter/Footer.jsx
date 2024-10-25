@@ -36,7 +36,7 @@ const Footer = () => {
           <i className="h-8 text-3xl w-8 transition-transform duration-300 hover:scale-110"> <FaLinkedin></FaLinkedin> </i>
           </a>
         </div>
-        <p>© 2024 Your Name. All rights reserved.</p>
+        <p>© 2024 Moazzem Hossen . All rights reserved.</p>
       </div>
     </footer>
   );
