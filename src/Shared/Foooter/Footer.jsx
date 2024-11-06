@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import bk from '../../assets/bk.png'
